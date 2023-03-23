@@ -1,0 +1,29 @@
+.watchlist_results{
+    display: grid;
+    grid-template-columns: repeat(5 , 19%);
+    gap: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media(max-width:1113px){
+    .watchlist_results{
+        grid-template-columns: repeat(4 , 23.5%);
+    }
+}
+@media(max-width:777px){
+    .watchlist_results{
+        grid-template-columns: repeat(3 , 31.5%);
+    }
+    
+}
+@media(max-width:610px){
+    .watchlist_results{
+        grid-template-columns: repeat(2 , 48.5%);
+    }
+}
+@media(max-width:445px){
+    .watchlist_results{
+        grid-template-columns: repeat(1 , 99.5%);
+    }
+}

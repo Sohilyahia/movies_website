@@ -1,0 +1,27 @@
+.rated_movie{
+    cursor: pointer;
+    position: relative;
+}
+.rated_info{
+  text-align: center;
+  margin-top: 10px;
+}
+
+.rated_img img{
+    width: 100%;
+    border-radius: 20px;
+}
+.rated_info{
+    display: grid;
+    justify-self: flex-end;
+}
+.rated_info h3{
+  font-size: 18px;
+}
+
+.rated_movie button{
+    opacity: 0;
+    padding: 0;
+    color: transparent;
+    border: none;
+   }
