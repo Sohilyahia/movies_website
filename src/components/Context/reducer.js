@@ -34,5 +34,7 @@ export const reducer = (state, action) => {
         watched: state.watched.filter((m) => m.id !== action.payload.id),
         watchlist: [action.payload, ...state.watchlist],
       };
+    default:
+      return state;
   }
 };

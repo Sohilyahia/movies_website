@@ -8,7 +8,7 @@ function Header() {
         <nav className="navbar navbar-expand-lg navbar-dark ">
             <div className="container">
                <Link to='/' className='navbar-brand'>
-                    <img src="https://yts.mx/assets/images/website/logo-YTS.svg" alt="YIFY"/>
+                    <img src="https://www.nicepng.com/png/full/486-4868686_horror-movie-logo-for-ihorror-website-illustration.png" alt="YIFY"/>
                </Link>
 
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

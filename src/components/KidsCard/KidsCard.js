@@ -2,16 +2,16 @@ import "./KidsCard.css";
 import { useState } from "react";
 import { useMovieContext } from "../Context/GlobalContext";
 import * as actions from "../Context/ActionsTypes";
-import { PlusIcon ,ExclamationIcon } from "../index";
+import { PlusIcon, ExclamationIcon } from "../index";
 import { FaStar } from "react-icons/fa";
 import {
-    Modal,
-    ModalBody,
-    ModalFooter,
-    ModalHeader,
-    ModalTitle,
-    Button,
-  } from "react-bootstrap";
+  Modal,
+  ModalBody,
+  ModalFooter,
+  ModalHeader,
+  ModalTitle,
+  Button,
+} from "react-bootstrap";
 let img_path = "https://image.tmdb.org/t/p/w500";
 
 function KidsCard({ rated }) {
@@ -22,7 +22,7 @@ function KidsCard({ rated }) {
   return (
     <div className="rated_movie" key={rated.id}>
       <div className="rated_img">
-        <img src={img_path + rated.poster_path} />
+        <img src={img_path + rated.poster_path} alt={rated.title} />
       </div>
       <div className="rated_info">
         <h3>{rated.title}</h3>
@@ -61,11 +61,7 @@ function KidsCard({ rated }) {
           <div className="model_popup">
             <div>
               {rated.poster_path ? (
-                <img
-                  
-                  src={img_path + rated.poster_path}
-                  alt={rated.title}
-                />
+                <img src={img_path + rated.poster_path} alt={rated.title} />
               ) : (
                 <div></div>
               )}

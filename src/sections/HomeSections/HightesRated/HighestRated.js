@@ -26,10 +26,7 @@ function HighestRated() {
   }, []);
 
   const settings = {
-    dots: true,
     infinite: true,
-    autoplay: true,
-    autoplaySpeed: 2000,
     speed: 500,
     slidesToShow: 6,
     slidesToScroll: 2,

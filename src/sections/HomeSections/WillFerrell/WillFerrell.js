@@ -12,24 +12,19 @@ let url =
   "/discover/movie?with_genres=35&with_cast=23659&sort_by=revenue.desc" +
   API_KEY;
 
-
 function WillFerrell() {
   const [willFerrell, setWillFerrell] = useState([]);
-  
+
   useEffect(() => {
     fetch(url)
       .then((res) => res.json())
       .then((data) => {
-        console.log(data.results);
         setWillFerrell(data.results);
       });
   }, []);
 
   const settings = {
-    dots: true,
     infinite: true,
-    autoplay: true,
-    autoplaySpeed: 2000,
     speed: 500,
     slidesToShow: 5,
     slidesToScroll: 2,
@@ -76,7 +71,7 @@ function WillFerrell() {
       <p className="header-WillFerrell">Will Ferrell Best Comedies Films</p>
       <Slider {...settings}>
         {willFerrell.map((rated) => (
-          <WillFerrellCard key={rated.id} rated={rated}/>
+          <WillFerrellCard key={rated.id} rated={rated} />
         ))}
       </Slider>
     </>

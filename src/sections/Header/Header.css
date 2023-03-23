@@ -1,7 +1,6 @@
 .navbar-collapse{
     flex-grow: 0;
 }
-
 ul li{
     margin-left: 20px;
 }
@@ -9,4 +8,7 @@ ul li{
 nav{
     border-bottom: 1px solid #2f2f2f;
     background: #1d1d1d;
+}
+.navbar-brand img{
+   height: 40px;   
 }

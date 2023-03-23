@@ -24,7 +24,7 @@ function HighestRateCard({ rated }) {
   return (
     <div className="rated_movie" key={rated.id}>
       <div className="rated_img">
-        <img src={img_path + rated.poster_path} />
+        <img src={img_path + rated.poster_path} alt={rated.title} />
       </div>
       <div className="rated_info">
         <h3>{rated.title}</h3>
@@ -38,7 +38,6 @@ function HighestRateCard({ rated }) {
           });
         }}
         className="FaPlusCircle"
-        id="btn"
         disabled={
           MovieContext.watchlist.find((o) => o.id === rated.id) ? true : false
         }
@@ -65,11 +64,7 @@ function HighestRateCard({ rated }) {
           <div className="model_popup">
             <div>
               {rated.poster_path ? (
-                <img
-                  
-                  src={img_path + rated.poster_path}
-                  alt={rated.title}
-                />
+                <img src={img_path + rated.poster_path} alt={rated.title} />
               ) : (
                 <div></div>
               )}
