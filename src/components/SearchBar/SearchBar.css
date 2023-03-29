@@ -51,9 +51,10 @@
         margin-left: 10px;  
     }
 }
-@media(max-width:488px){
+
+@media(max-width:480px){
     .results{
-        grid-template-columns: repeat(1 , 108%);   
+        grid-template-columns: repeat(2 , 51%);   
     }
     .results li{
         width: 100%;

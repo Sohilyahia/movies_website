@@ -1,4 +1,3 @@
-import "./Watched.css";
 import { useMovieContext } from "../../components/Context/GlobalContext";
 import { WatchedCard } from "../../components/index";
 

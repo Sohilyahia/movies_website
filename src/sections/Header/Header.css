@@ -4,11 +4,17 @@
 ul li{
     margin-left: 20px;
 }
-
 nav{
     border-bottom: 1px solid #2f2f2f;
-    background: #1d1d1d;
 }
 .navbar-brand img{
    height: 40px;   
+}
+.offcanvas {
+    background-color: #1d1d1d;
+}
+
+
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+    color: greenyellow;
 }

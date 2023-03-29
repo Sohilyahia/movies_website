@@ -68,61 +68,55 @@ function ResultCard({ movie }) {
         >
           Add to Watched
         </button>
-        
+
         <Button variant="primary" onClick={handleShow}>
-            View Details
-          </Button>
-        </div>
-
-        <Modal
-          show={show}
-          onHide={handleClose}
-          backdrop="static"
-          keyboard={false}
-        >
-          <Modal.Header closeButton>
-            <Modal.Title>
-              <h3>{movie.title}</h3>
-            </Modal.Title>
-          </Modal.Header>
-
-          <Modal.Body>
-            <div className="model_popup">
-              <div>
-                {movie.poster_path ? (
-                  <img
-                   
-                    src={img_path + movie.poster_path}
-                    alt={movie.title}
-                  />
-                ) : (
-                  <div></div>
-                )}
-              </div>
-
-              <div className="model_popup_info">
-                <h3>{movie.title}</h3>
-                <h6>
-                  IMDB :{" "}
-                  <FaStar style={{ color: "yellow", marginBottom: "2px" }} />{" "}
-                  {movie.vote_average}
-                </h6>
-                <h6>release date : {movie.release_date}</h6>
-              </div>
-            </div>
-            <h5 className="overview">Overview</h5>
-            <h5 style={{ fontWeight: "lighter" }}>{movie.overview}</h5>
-          </Modal.Body>
-
-          <Modal.Footer>
-            <Button variant="secondary" onClick={handleClose}>
-              Close
-            </Button>
-          </Modal.Footer>
-        </Modal>
+          View Details
+        </Button>
       </div>
-      
-   
+
+      <Modal
+        show={show}
+        onHide={handleClose}
+        backdrop="static"
+        keyboard={false}
+      >
+        <Modal.Header closeButton>
+          <Modal.Title>
+            <h3>{movie.title}</h3>
+          </Modal.Title>
+        </Modal.Header>
+
+        <Modal.Body>
+          <div className="model_popup">
+            <div>
+              {movie.poster_path ? (
+                <img src={img_path + movie.poster_path} alt={movie.title} />
+              ) : (
+                <div></div>
+              )}
+            </div>
+
+            <div className="model_popup_info">
+              <h3>{movie.title}</h3>
+              <h6>
+                IMDB :{" "}
+                <FaStar style={{ color: "yellow", marginBottom: "2px" }} />{" "}
+                {movie.vote_average}
+              </h6>
+              <h6>release date : {movie.release_date}</h6>
+            </div>
+          </div>
+          <h5 className="overview">Overview</h5>
+          <h5 style={{ fontWeight: "lighter" }}>{movie.overview}</h5>
+        </Modal.Body>
+
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleClose}>
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
+    </div>
   );
 }
 

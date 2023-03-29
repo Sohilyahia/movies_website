@@ -221,14 +221,14 @@
       left: -18%;
     }
   }
-  @media(max-width:414px){
+  @media(max-width:445px){
     .FaPlusCircle{ 
       top: 65%;
-      left: -10%;
+      left: -20%;
     }
     .rated_movie:hover .FaPlusCircle{
       top: 2%;
-      left: -10%;
+      left: -20%;
     }
     .FaPlusCircle li .tit{
       font-size: 14px;
@@ -238,22 +238,22 @@
     }
     .FaPlusCircle_TomCrous{
       top: 65%;
-      left: -10%;
+      left: -20%;
     }
   
     .rated_movie:hover .FaPlusCircle_TomCrous{
       top: 2%;
-      left: -10%;
+      left: -20%;
     }
   }
-  @media(max-width:390px){
+  @media(max-width:415px){
     .FaPlusCircle{ 
       top: 65%;
-      left: -10%;
+      left: -22%;
     }
     .rated_movie:hover .FaPlusCircle{
       top: 2%;
-      left: -10%;
+      left: -22%;
     }
     .FaPlusCircle li .tit{
       font-size: 14px;
@@ -263,22 +263,47 @@
     }
     .FaPlusCircle_TomCrous{
       top: 65%;
-      left: -18%;
+      left: -22%;
     }
   
     .rated_movie:hover .FaPlusCircle_TomCrous{
       top: 2%;
-      left: -18%;
+      left: -22%;
+    }
+  }
+  @media(max-width:391px){
+    .FaPlusCircle{ 
+      top: 65%;
+      left: -22%;
+    }
+    .rated_movie:hover .FaPlusCircle{
+      top: 2%;
+      left: -22%;
+    }
+    .FaPlusCircle li .tit{
+      font-size: 14px;
+    }
+    .FaPlusCircle li .tit{
+      font-size: 12px;
+    }
+    .FaPlusCircle_TomCrous{
+      top: 65%;
+      left: -22%;
+    }
+  
+    .rated_movie:hover .FaPlusCircle_TomCrous{
+      top: 2%;
+      left: -22%;
     }
   }
   @media(max-width:375px){
     .FaPlusCircle{ 
       top: 65%;
-      left: -10%;
+      left: -22%;
     }
     .rated_movie:hover .FaPlusCircle{
       top: 2%;
-      left: -10%;
+      left: -22%;
     }
     .FaPlusCircle li .tit{
       font-size: 14px;
@@ -288,36 +313,127 @@
     }
     .FaPlusCircle_TomCrous{
       top: 65%;
-      left: -10%;
+      left: -22%;
     }
   
     .rated_movie:hover .FaPlusCircle_TomCrous{
       top: 2%;
-      left: -10%;
+      left: -22%;
     }
+  }
+  @media(max-width:360px){
+    .FaPlusCircle{ 
+      top: 65%;
+      left: -25%;
+    }
+    .rated_movie:hover .FaPlusCircle{
+      top: 2%;
+      left: -25%;
+    }
+    .FaPlusCircle li .tit{
+      font-size: 14px;
+    }
+    .FaPlusCircle li .tit{
+      font-size: 12px;
+    }
+    .FaPlusCircle_TomCrous{
+      top: 65%;
+      left: -25%;
+    }
+  
+    .rated_movie:hover .FaPlusCircle_TomCrous{
+      top: 2%;
+      left: -25%;
+    }
+  }
+  @media(max-width:330px){
+    .FaPlusCircle{ 
+      top: 65%;
+      left: -28%;
+    }
+    .rated_movie:hover .FaPlusCircle{
+      top: 2%;
+      left: -28%;
+    }
+    .FaPlusCircle li .tit{
+      font-size: 14px;
+    }
+    .FaPlusCircle li .tit{
+      font-size: 12px;
+    }
+    .FaPlusCircle_TomCrous{
+      top: 65%;
+      left: -28%;
+    }
+  
+    .rated_movie:hover .FaPlusCircle_TomCrous{
+      top: 2%;
+      left: -28%;
+    }
+  }
+  @media(max-width:307px){
+    .FaPlusCircle{ 
+      top: 65%;
+      left: -32%;
+    }
+    .rated_movie:hover .FaPlusCircle{
+      top: 2%;
+      left: -32%;
+    }
+
   }
   @media(max-width:280px){
     .FaPlusCircle{ 
       top: 65%;
-      left: -19%;
+      left: -38%;
     }
     .rated_movie:hover .FaPlusCircle{
       top: 2%;
-      left: -19%;
+      left: -38%;
     }
     .FaPlusCircle li .tit{
       font-size: 14px;
     }
     .FaPlusCircle li .tit{
-      font-size: 12px;
+      font-size: 14px;
     }
     .FaPlusCircle_TomCrous{
       top: 65%;
-      left: -19%;
+      left: -32%;
     }
   
     .rated_movie:hover .FaPlusCircle_TomCrous{
       top: 2%;
-      left: -19%;
+      left: -32%;
+    }
+  }
+  @media(max-width:260px){
+    .FaPlusCircle{ 
+      top: 65%;
+      left: -38%;
+    }
+    .rated_movie:hover .FaPlusCircle{
+      top: 2%;
+      left: -38%;
+    }
+
+  }
+  @media(max-width:250px){
+    .FaPlusCircle{ 
+      top: 65%;
+      left: -44%;
+    }
+    .rated_movie:hover .FaPlusCircle{
+      top: 2%;
+      left: -44%;
+    }
+    .FaPlusCircle_TomCrous{
+      top: 65%;
+      left: -43%;
+    }
+  
+    .rated_movie:hover .FaPlusCircle_TomCrous{
+      top: 2%;
+      left: -43%;
     }
   }

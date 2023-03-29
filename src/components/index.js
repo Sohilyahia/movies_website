@@ -1,11 +1,10 @@
-export{default as Container} from './container/Container'
-export{default as SearchBar} from './SearchBar/SearchBar'
-export{default as PopularMovieCard} from './PopularMovieCard/PopularMovieCard'
-export{default as WatchListCard} from './WatchListCard/WatchListCard'
-export{default as WatchedCard} from './WatchedCard/WatchedCard'
-export{default as HighestRateCard} from './HighestRateCard/HighestRateCard'
-export{default as TomCruiseCard} from './TomCruiseCard/TomCruiseCard'
-export{default as TvShowCard} from './TvShowCard/TvShowCard'
-export{default as KidsCard} from './KidsCard/KidsCard'
-export{default as PlusIcon} from './Plusicon/PlusIcon'
-export{default as ExclamationIcon} from './ExclamationIcon/ExclamationIcon'
+export { default as SearchBar } from "./SearchBar/SearchBar";
+export { default as PopularMovieCard } from "./PopularMovieCard/PopularMovieCard";
+export { default as WatchListCard } from "./WatchListCard/WatchListCard";
+export { default as WatchedCard } from "./WatchedCard/WatchedCard";
+export { default as HighestRateCard } from "./HighestRateCard/HighestRateCard";
+export { default as TomCruiseCard } from "./TomCruiseCard/TomCruiseCard";
+export { default as TvShowCard } from "./TvShowCard/TvShowCard";
+export { default as KidsCard } from "./KidsCard/KidsCard";
+export { default as PlusIcon } from "./Plusicon/PlusIcon";
+export { default as ExclamationIcon } from "./ExclamationIcon/ExclamationIcon";

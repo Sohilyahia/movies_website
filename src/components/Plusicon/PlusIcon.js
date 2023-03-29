@@ -2,7 +2,6 @@ import "./PlusIcon.css";
 import { FaPlusCircle } from "react-icons/fa";
 
 function PlusIcon() {
- 
   return (
     <ul className="FaPlusCircle">
       <li>

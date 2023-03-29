@@ -1,4 +1,3 @@
-import "./KidsCard.css";
 import { useState } from "react";
 import { useMovieContext } from "../Context/GlobalContext";
 import * as actions from "../Context/ActionsTypes";

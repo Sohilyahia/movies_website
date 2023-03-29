@@ -83,8 +83,6 @@
      z-index: 1;
   }
 
-
-  
   @media(max-width:1199px){
     .ExclamationIcon li:hover{
       width: 135px;
@@ -105,22 +103,14 @@
 
     .ExclamationIcon_TomCrous{
       top: 2%;
-      left: -22%;
+      left: -20%;
     }
   
     .rated_movie:hover .ExclamationIcon_TomCrous{
-      top: 70%;
-      left: -22%;
+      top: 75%;
+      left: -20%;
     }
-    .ExclamationIcon_WillFerrell{
-      top: 2%;
-      left: -25%;
-    }
-  
-    .rated_movie:hover .ExclamationIcon_WillFerrell{
-      top: 65%;
-      left: -25%;
-    }
+   
   }
 
   @media(max-width:1024px){
@@ -215,42 +205,146 @@
       font-size: 14px;
   }
 }
-  @media(max-width:414px){
+  @media(max-width:483px){
     .ExclamationIcon{
       top: 2%;
-      left: -10%;
+      left: -20%;
     }
     .rated_movie:hover .ExclamationIcon{
-      top: 82%;
-      left: -10%;
+      top: 70%;
+      left: -20%;
     }
     .ExclamationIcon li .tit{
       font-size: 14px;
   }
 }
-  @media(max-width:390px){
+  @media(max-width:436px){
     .ExclamationIcon{
       top: 2%;
-      left: -10%;
+      left: -20%;
     }
     .rated_movie:hover .ExclamationIcon{
-      top: 80%;
-      left: -10%;
+      top: 68%;
+      left: -20%;
     }
     .ExclamationIcon li .tit{
       font-size: 14px;
+  }
+}
+  @media(max-width:415px){
+    .ExclamationIcon{
+      top: 2%;
+      left: -20%;
+    }
+    .rated_movie:hover .ExclamationIcon{
+      top: 65%;
+      left: -20%;
+    }
+    .ExclamationIcon li .tit{
+      font-size: 14px;
+  }
+}
+  @media(max-width:391px){
+    .ExclamationIcon{
+      top: 2%;
+      left: -21%;
+    }
+    .rated_movie:hover .ExclamationIcon{
+      top: 65%;
+      left: -21%;
+    }
+    .ExclamationIcon li .tit{
+      font-size: 14px;
+  }
+}
+  @media(max-width:376px){
+    .ExclamationIcon{
+      top: 2%;
+      left: -22%;
+    }
+    .rated_movie:hover .ExclamationIcon{
+      top: 70%;
+      left: -22%;
+    }
+}
+  @media(max-width:360px){
+    .ExclamationIcon{
+      top: 2%;
+      left: -25%;
+    }
+    .rated_movie:hover .ExclamationIcon{
+      top: 70%;
+      left: -25%;
+    }
+    .ExclamationIcon li .tit{
+      font-size: 14px;
+  }
+}
+
+  @media(max-width:330px){
+    .ExclamationIcon{
+      top: 2%;
+      left: -28%;
+    }
+    .rated_movie:hover .ExclamationIcon{
+      top: 65%;
+      left: -28%;
+    }
+    .ExclamationIcon li .tit{
+      font-size: 14px;
+  }
+
+
+}
+@media(max-width:307px){
+  .ExclamationIcon{
+    top: 2%;
+    left: -32%;
+  }
+  .rated_movie:hover .ExclamationIcon{
+    top: 62%;
+    left: -32%;
   }
 }
   @media(max-width:280px){
     .ExclamationIcon{
       top: 2%;
-      left: -19%;
+      left: -38%;
     }
     .rated_movie:hover .ExclamationIcon{
-      top: 78%;
-      left: -19%;
+      top: 59%;
+      left: -38%;
     }
     .ExclamationIcon li .tit{
       font-size: 14px;
   }
+}
+  @media(max-width:260px){
+    .ExclamationIcon{
+      left: -35%;
+    }
+    .rated_movie:hover .ExclamationIcon{
+      top: 58%;
+      left: -37%;
+    }
+    .ExclamationIcon li .tit{
+      font-size: 14px;
+  }
+}
+  @media(max-width:250px){
+    .ExclamationIcon{
+      left: -44%;
+    }
+    .rated_movie:hover .ExclamationIcon{
+      top: 57%;
+      left: -44%;
+    }
+    .ExclamationIcon_TomCrous{
+      top: 2%;
+      left: -22%;
+    }
+    .rated_movie:hover .ExclamationIcon_TomCrous{
+      top: 63%;
+      left: -43%;
+    }
 }

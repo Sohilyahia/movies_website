@@ -7,10 +7,7 @@ import { useEffect, useState } from "react";
 
 let API_KEY = "&api_key=e09688488e47eddfb6a9c40e8ae46475";
 let Base_url = "https://api.themoviedb.org/3";
-let url =
-  Base_url +
-  "/discover/movie?with_genres=18&primary_release_year=2014" +
-  API_KEY;
+let url = Base_url + "/movie/upcoming?" + API_KEY;
 
 // main Component
 function HighestRated() {
@@ -26,10 +23,11 @@ function HighestRated() {
 
   const settings = {
     infinite: true,
+    autoplay: true,
     speed: 500,
     slidesToShow: 6,
     slidesToScroll: 2,
-    initialSlide: 0,
+    initialSlide: 2,
     responsive: [
       {
         breakpoint: 1024,
@@ -60,7 +58,7 @@ function HighestRated() {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
           arrows: false,
         },
@@ -69,7 +67,7 @@ function HighestRated() {
   };
   return (
     <>
-      <p className="header-drama">Best Drama</p>
+      <p className="header-slick">Best Upcoming</p>
       <Slider {...settings}>
         {highestRated.map((rated) => (
           <HighestRateCard key={rated.id} rated={rated} />

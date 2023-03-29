@@ -1,4 +1,3 @@
-import "./TomCruise.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -59,7 +58,7 @@ function TomCruise() {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
           arrows: false,
         },
@@ -68,7 +67,7 @@ function TomCruise() {
   };
   return (
     <>
-      <p className="header-WillFerrell">Best Of Tom Cruise</p>
+      <p className="header-slick">Best Of Tom Cruise</p>
       <Slider {...settings}>
         {tomCruise.map((rated) => (
           <TomCruiseCard key={rated.id} rated={rated} />

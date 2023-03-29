@@ -1,43 +1,30 @@
-import  { React,useEffect, useState } from 'react'
-import { PopularMovieCard } from '../../components/index'
-import { HighestRated, TomCruise,Kids, TvShow } from '../../sections';
-import './Home.css'
+import * as React from "react";
+import { HighestRated, TvShow } from "../../sections";
+import "./Home.css";
 
-let API_KEY = '&api_key=e09688488e47eddfb6a9c40e8ae46475';
-let Base_url = 'https://api.themoviedb.org/3';
-let URL = Base_url+'/discover/movie?sort_by=popularity.desc'+API_KEY;
+// lazy  should exported as default from original component
+const PopularMovies = React.lazy(() =>
+  import("../../sections/HomeSections/PopularMovies/PopularMovies.js")
+);
+const Kids = React.lazy(() =>
+  import("../../sections/HomeSections/Kids/Kids.js")
+);
+const TomCruise = React.lazy(() =>
+  import("../../sections/HomeSections/TomCruise/TomCruise.js")
+);
 
 function Home() {
-
-    const [popularMovie, setPopularMovie] = useState([]);
-
-    useEffect(()=>{
-      fetch(URL)
-      .then(res => res.json())
-      .then((data)=>{
-          setPopularMovie(data.results)
-      })
-    },[])
-
   return (
-    <>  
-          <HighestRated/>
-          <TvShow/>
-          <Kids/>
-      <h2 className='header-popular'>popular Movie</h2>
-      <div className='results'>
-          {
-            popularMovie.map((info)=>{
-              return(
-                <PopularMovieCard key={info.id} info={info}/>
-              )
-            })
-          }
-      </div>
-      
-      <TomCruise/>
-    </>
-  )
+    <div>
+      <HighestRated />
+      <TvShow />
+      <React.Suspense fallback={<div>Loading...</div>}>
+        <Kids />
+        <PopularMovies />
+        <TomCruise />
+      </React.Suspense>
+    </div>
+  );
 }
 
-export default Home
+export default Home;

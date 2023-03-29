@@ -4,9 +4,16 @@
 .slick-list {
     margin: 0 -5px;
 }
+.rated_img img{
+    width: 100%;
+    border-radius: 20px;
+}
+.rated_info{
+    display: grid;
+    justify-self: flex-end;
+}
 
-
-.header-drama{
+.header-slick{
     font-size: 24px;
     text-align: center;
     margin-top: 20px;

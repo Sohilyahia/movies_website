@@ -1,37 +1,65 @@
-import './Header.css'
-import { Link, NavLink } from 'react-router-dom'
-
+import "./Header.css";
+import logo from "../../assests/images/486-4868686_horror-movie-logo-for-ihorror-website-illustration.png";
+// nav
+import { Link, NavLink } from "react-router-dom";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
 
 function Header() {
+  const WatchList = document.getElementById("WatchList");
+  const Watched = document.getElementById("Watched");
+  const Search = document.getElementById("Search");
   return (
-   <> 
-        <nav className="navbar navbar-expand-lg navbar-dark ">
-            <div className="container">
-               <Link to='/' className='navbar-brand'>
-                    <img src="https://www.nicepng.com/png/full/486-4868686_horror-movie-logo-for-ihorror-website-illustration.png" alt="YIFY"/>
-               </Link>
+    <>
+      <Navbar collapseOnSelect expand="lg" variant="dark">
+        <Container>
+          <Navbar.Brand
+            as={NavLink}
+            to="/"
+            className="navbar-brand"
+            href="/"
+            onClick={() => {
+              WatchList.classList.remove("active");
+              Watched.classList.remove("active");
+              Search.classList.remove("active");
+            }}
+          >
+            <img src={logo} alt="YIFY" />
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="me-auto">
+              <Nav.Link as={NavLink} to="/" href="/" aria-current="page">
+                Home
+              </Nav.Link>
 
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
-                </button>
+              <Nav.Link
+                id="WatchList"
+                as={NavLink}
+                to="./watchlist"
+                href="#watchlist"
+              >
+                WatchList
+              </Nav.Link>
 
-                <div className="collapse navbar-collapse" id="navbarNav">
-                    <ul className="navbar-nav">
-                        <li className="nav-item">
-                            <NavLink to='./watchlist' className="nav-link" aria-current="page">WatchList</NavLink>
-                        </li>
-                        <li className="nav-item">
-                            <NavLink to='./watched' className="nav-link">Watched</NavLink>
-                        </li>
-                        <li className="nav-item">
-                            <NavLink to='./Search' className="nav-link">Search</NavLink>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-   </>
-  )
+              <Nav.Link
+                id="hWatchedome"
+                as={NavLink}
+                to="./Watched"
+                href="#Watched"
+              >
+                Watched
+              </Nav.Link>
+              <Nav.Link id="Search" as={NavLink} to="./Search" href="#Search">
+                Search
+              </Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+    </>
+  );
 }
 
-export default Header
+export default Header;

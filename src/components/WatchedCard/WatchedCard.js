@@ -1,4 +1,3 @@
-import "./WatchedCard.css";
 import { FaEyeSlash } from "react-icons/fa";
 import { FaTimes } from "react-icons/fa";
 import { useMovieContext } from "../Context/GlobalContext";

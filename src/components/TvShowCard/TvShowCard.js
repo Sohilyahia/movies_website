@@ -1,4 +1,3 @@
-import "./WillFerrellCard.css";
 import { useState } from "react";
 import { PlusIconWillFerrell } from "../Plusicon/PlusIcon";
 import * as actions from "../Context/ActionsTypes";

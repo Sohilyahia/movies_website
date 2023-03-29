@@ -1,4 +1,3 @@
-import "./TvShow.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -22,8 +21,9 @@ function TvShow() {
 
   const settings = {
     infinite: true,
+    autoplay: true,
     speed: 500,
-    slidesToShow: 5,
+    slidesToShow: 6,
     slidesToScroll: 2,
     initialSlide: 1,
     responsive: [
@@ -55,7 +55,7 @@ function TvShow() {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
           arrows: false,
         },
@@ -64,7 +64,7 @@ function TvShow() {
   };
   return (
     <>
-      <p className="header-WillFerrell">Top Rated TV Show</p>
+      <p className="header-slick">Top Rated TV Show</p>
       <Slider {...settings}>
         {willFerrell.map((rated) => (
           <TvShowCard key={rated.id} rated={rated} />
