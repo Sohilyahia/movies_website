@@ -79,7 +79,9 @@
   .controls{
     width: 68%;
   }
-
+  .result-card:hover .controls{
+    margin-top: -10px;
+ }
 }
 
   @media(max-width:540px){
@@ -90,7 +92,10 @@
   .controls{
     width: 50%;
   }
-
+  .result-card:hover .controls{
+    opacity: 1;
+    margin-top: 50px;
+ }
 }
   @media(max-width:504px){
     .popular-card:hover .controls{
@@ -100,7 +105,12 @@
   .controls{
     width: 50%;
   }
-
+  .result-card:hover .controls{
+    margin-top: 15px;
+ }
+  .result-card .controls{
+    width: 70%;
+ }
 }
   @media(max-width:488px){
     .popular-card:hover .controls{
@@ -144,6 +154,9 @@
 
   padding: 1px 0px;
 }
+.card-info h3 {
+  font-size: 9px;
+}
 }
   @media(max-width:361px){
     .popular-card:hover .controls{
@@ -177,6 +190,10 @@
 
   padding: 1px 0px;
 }
+.result-card:hover .controls{
+  opacity: 1;
+  margin-top: 5px;
+}
 }
   @media(max-width:295px){
     .popular-card:hover .controls{
@@ -199,9 +216,12 @@
 .controls-title {
   margin-bottom: 5px;
 }
-
+.result-card:hover .controls{
+  opacity: 1;
+  margin-top: -10px;
 }
-  @media(max-width:280px){
+}
+  @media(max-width:287px){
     .popular-card:hover .controls{
         opacity: 1;
         margin-top: -10px;
@@ -219,6 +239,10 @@
 .controls .btn {
   margin-bottom: 0;
   padding: 1px 0px;
+}
+.result-card:hover .controls{
+  opacity: 1;
+  margin-top: -10px;
 }
 }
 

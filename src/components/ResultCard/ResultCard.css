@@ -64,29 +64,4 @@
         margin-top: -10px;
      }
 }
-@media(max-width:540px){
-    .result-card:hover .controls{
-        opacity: 1;
-        margin-top: 50px;
-     }
-}
 
-@media(max-width:414px){
-    .result-card:hover .controls{
-        opacity: 1;
-        margin-top: 150px;
-     }
-}
-
-@media(max-width:375px){
-    .result-card:hover .controls{
-        opacity: 1;
-        margin-top: 130px;
-     }
-}
-@media(max-width:280px){
-    .result-card:hover .controls{
-        opacity: 1;
-        margin-top: 50px;
-     }
-}
