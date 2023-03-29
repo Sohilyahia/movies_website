@@ -1,6 +1,6 @@
 import  { React,useEffect, useState } from 'react'
 import { PopularMovieCard } from '../../components/index'
-import { HighestRated, WillFerrell, TomCruise,Kids } from '../../sections';
+import { HighestRated, TomCruise,Kids, TvShow } from '../../sections';
 import './Home.css'
 
 let API_KEY = '&api_key=e09688488e47eddfb6a9c40e8ae46475';
@@ -22,7 +22,7 @@ function Home() {
   return (
     <>  
           <HighestRated/>
-          <TomCruise/>
+          <TvShow/>
           <Kids/>
       <h2 className='header-popular'>popular Movie</h2>
       <div className='results'>
@@ -34,7 +34,8 @@ function Home() {
             })
           }
       </div>
-      <WillFerrell/>
+      
+      <TomCruise/>
     </>
   )
 }

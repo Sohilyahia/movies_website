@@ -13,7 +13,7 @@ import {
   Button,
 } from "react-bootstrap";
 
-let img_path = "https://image.tmdb.org/t/p/w500";
+let img_path = "https://image.tmdb.org/t/p/w300";
 
 function HighestRateCard({ rated }) {
   const MovieContext = useMovieContext();

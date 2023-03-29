@@ -7,7 +7,7 @@ import Button from "react-bootstrap/Button";
 import { useState } from "react";
 
 function ResultCard({ movie }) {
-  let img_path = "https://image.tmdb.org/t/p/w500";
+  let img_path = "https://image.tmdb.org/t/p/w300";
   const MovieContext = useMovieContext();
   const [show, setShow] = useState(false);
   const handleShow = () => setShow(true);

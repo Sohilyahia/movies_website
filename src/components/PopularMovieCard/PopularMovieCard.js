@@ -33,7 +33,7 @@ function PopularMovieCard({ info }) {
   const handleShow = () => setShow(true);
   const handleClose = () => setShow(false);
 
-  let img_path = "https://image.tmdb.org/t/p/w500";
+  let img_path = "https://image.tmdb.org/t/p/w300";
   return (
     <>
       <div className="popular-card">

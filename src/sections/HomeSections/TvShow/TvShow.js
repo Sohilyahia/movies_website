@@ -1,18 +1,15 @@
-import "./WillFerrell.css";
+import "./TvShow.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useEffect, useState } from "react";
-import { WillFerrellCard } from "../../../components";
+import { TvShowCard } from "../../../components";
 
 let API_KEY = "&api_key=e09688488e47eddfb6a9c40e8ae46475";
 let Base_url = "https://api.themoviedb.org/3";
-let url =
-  Base_url +
-  "/discover/movie?with_genres=35&with_cast=23659&sort_by=revenue.desc" +
-  API_KEY;
+let url = Base_url + "/tv/top_rated?" + API_KEY;
 
-function WillFerrell() {
+function TvShow() {
   const [willFerrell, setWillFerrell] = useState([]);
 
   useEffect(() => {
@@ -28,7 +25,7 @@ function WillFerrell() {
     speed: 500,
     slidesToShow: 5,
     slidesToScroll: 2,
-    initialSlide: 12,
+    initialSlide: 1,
     responsive: [
       {
         breakpoint: 1024,
@@ -36,7 +33,6 @@ function WillFerrell() {
           slidesToShow: 3,
           slidesToScroll: 3,
           infinite: true,
-          dots: true,
         },
       },
       {
@@ -68,14 +64,14 @@ function WillFerrell() {
   };
   return (
     <>
-      <p className="header-WillFerrell">Will Ferrell Best Comedies Films</p>
+      <p className="header-WillFerrell">Top Rated TV Show</p>
       <Slider {...settings}>
         {willFerrell.map((rated) => (
-          <WillFerrellCard key={rated.id} rated={rated} />
+          <TvShowCard key={rated.id} rated={rated} />
         ))}
       </Slider>
     </>
   );
 }
 
-export default WillFerrell;
+export default TvShow;

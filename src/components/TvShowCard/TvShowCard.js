@@ -14,8 +14,8 @@ import {
   Button,
 } from "react-bootstrap";
 
-let img_path = "https://image.tmdb.org/t/p/w500";
-function WillFerrellCard({ rated }) {
+let img_path = "https://image.tmdb.org/t/p/w300";
+function TvShowCard({ rated }) {
   const MovieContext = useMovieContext();
   const [show, setShow] = useState(false);
   const handelClose = () => setShow(false);
@@ -23,11 +23,11 @@ function WillFerrellCard({ rated }) {
   return (
     <div className="rated_movie" key={rated.id}>
       <div className="rated_img">
-        <img src={img_path + rated.poster_path} alt={rated.title} />
+        <img src={img_path + rated.poster_path} alt={rated.name} />
       </div>
       <div className="rated_info">
-        <h3>{rated.title}</h3>
-        <span>{rated.release_date}</span>
+        <h3>{rated.name}</h3>
+        <span>{rated.first_air_date}</span>
       </div>
       <button
         onClick={() =>
@@ -58,27 +58,27 @@ function WillFerrellCard({ rated }) {
       >
         <ModalHeader closeButton>
           <ModalTitle>
-            <h3>{rated.title}</h3>
+            <h3>{rated.name}</h3>
           </ModalTitle>
         </ModalHeader>
         <ModalBody>
           <div className="model_popup">
             <div>
               {rated.poster_path ? (
-                <img src={img_path + rated.poster_path} alt={rated.title} />
+                <img src={img_path + rated.poster_path} alt={rated.name} />
               ) : (
                 <div></div>
               )}
             </div>
 
             <div className="model_popup_info">
-              <h3>{rated.title}</h3>
+              <h3>{rated.name}</h3>
               <h6>
                 IMDB :
                 <FaStar style={{ color: "yellow", marginBottom: "2px" }} />
                 {rated.vote_average}
               </h6>
-              <h6>release date : {rated.release_date}</h6>
+              <h6>release date : {rated.first_air_date}</h6>
             </div>
           </div>
           <h5 className="overview">Overview</h5>
@@ -94,4 +94,4 @@ function WillFerrellCard({ rated }) {
   );
 }
 
-export default WillFerrellCard;
+export default TvShowCard;

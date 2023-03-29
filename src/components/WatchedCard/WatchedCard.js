@@ -6,7 +6,7 @@ import * as actions from "../Context/ActionsTypes";
 
 function WatchedCard({ movie }) {
   const MovieContext = useMovieContext();
-  let img_path = "https://image.tmdb.org/t/p/w500";
+  let img_path = "https://image.tmdb.org/t/p/w300";
   return (
     <div className="watchlistcard">
       <div>
